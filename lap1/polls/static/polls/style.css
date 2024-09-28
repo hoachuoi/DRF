@@ -1,0 +1,8 @@
+li a {
+    color: red;
+    font-size: larger;
+}
+body {
+    background: white url("e8b2353c01ada2f3fbbc.jpg") no-repeat;
+    background-size: cover;
+}
