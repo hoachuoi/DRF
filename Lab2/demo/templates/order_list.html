@@ -1,0 +1,8 @@
+<h1>Danh sách đơn hàng</h1>
+<ul>
+  {% for order in orders %}
+    <li>Mã giao dịch: {{ order.transaction_id }} - Trạng thái: {{ order.complete }}</li>
+  {% empty %}
+    <li>Không có đơn hàng nào.</li>
+  {% endfor %}
+</ul>
