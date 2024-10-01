@@ -1,0 +1,8 @@
+<h1>Kết quả tìm kiếm khách hàng</h1>
+<ul>
+  {% for customer in customers %}
+    <li>{{ customer.name }} - {{ customer.email }}</li>
+  {% empty %}
+    <li>Không tìm thấy khách hàng nào.</li>
+  {% endfor %}
+</ul>

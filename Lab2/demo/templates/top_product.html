@@ -1,0 +1,8 @@
+<h1>Top 5 sản phẩm có giá cao nhất</h1>
+<ul>
+  {% for product in products %}
+    <li>{{ product.name }} - {{ product.price }} VND</li>
+  {% empty %}
+    <li>Không có sản phẩm nào.</li>
+  {% endfor %}
+</ul>

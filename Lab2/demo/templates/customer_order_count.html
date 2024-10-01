@@ -1,0 +1,8 @@
+<h1>Số lượng đơn hàng của mỗi khách hàng</h1>
+<ul>
+  {% for customer in customers %}
+    <li>{{ customer.name }} - Số lượng đơn hàng: {{ customer.order_count }}</li>
+  {% empty %}
+    <li>Không có khách hàng nào.</li>
+  {% endfor %}
+</ul>
